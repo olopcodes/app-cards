@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="body">
+    <div class="apps-container">
+        <h2>Apps</h2>
+        <ul class="apps-list grid">
+            <li class="app-item">
+                <i class="fa-brands fa-facebook"></i>
+                <div>
+                    <p>facebook</p>
+                    <button class="hide">x Delete</button>
+                </div>
+            </li>
+
+            <li class="app-item">
+                <i class="fa-brands fa-twitter"></i>
+                <div>
+                    <p>twitter</p>
+                    <button class="hide">x Delete</button>
+                </div>
+            </li>
+
+            <li class="app-item">
+                <i class="fa-brands fa-youtube"></i>
+                <div>
+                    <p>youtube</p>
+                    <button class="hide">x Delete</button>
+                </div>
+            </li>
+
+            <li class="app-item">
+                <i class="fa-brands fa-slack"></i>
+                <div>
+                    <p>slack</p>
+                    <button class="hide">x Delete</button>
+                </div>
+            </li>
+
+            <li class="app-item">
+                <i class="fa-brands fa-instagram"></i>
+                <div>
+                    <p>instagram</p>
+                    <button class="hide">x Delete</button>
+                </div>
+            </li>
+
+            <li class="app-item">
+                <i class="fa-brands fa-trello"></i>
+                <div>
+                    <p>trello</p>
+                    <button class="hide">x Delete</button>
+                </div>
+            </li>
+        </ul>
+
+        <button class="add-more-btn">add more apps</button>
+    </div>
+
+    <div class="modal hide">
+        <div class="modal-container">
+            <button class="close-modal">close</button>
+            <form class="modal-form">
+                <div class="modal-form-group">
+                    <label for="icon">App Icon:</label>
+                    <ul class="icon-list grid">
+                      
+                    </ul>
+                </div>
+                <div class="modal-form-group">
+                    <label for="appName">App Name:</label>
+                    <input type="text" name="appName" id="appName">
+                </div>
+                <div class="modal-form-group">
+                    <label for="appIcon">App Icon Color:</label>
+                    <div class="icon-colors grid">
+                        <label class="container">
+                          <input type="checkbox" name="iconColor">
+                          <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container"> 
+                            <input type="checkbox" name="iconColor">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container">
+                            <input type="checkbox" name="iconColor">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container">
+                            <input type="checkbox" name="iconColor">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container">
+                            <input type="checkbox" name="iconColor">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox" name="iconColor">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-form-group modal-button">
+                    <button class="submit">submit</button>
+                    <button class="reset">reset</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+
+</html>
